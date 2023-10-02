@@ -5,6 +5,7 @@ import 'package:admin_dashboard/routing/routes.dart';
 import 'package:flutter/material.dart';
 import '../pages/authentication/authentication.dart';
 import '../pages/autoshow/autoshow.dart';
+import '../pages/services/services.dart';
 import '../pages/orders/orders.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -19,6 +20,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return getPageRoute(const OrdersPage());
     case autoshowPageRoute:
       return getPageRoute(AutoshowPage());
+    case servicesPageRoute:
+      return getPageRoute(ServicesPage());
     case authenticationPageRoute:
       return getPageRoute(const AuthenticationPage());
     default:

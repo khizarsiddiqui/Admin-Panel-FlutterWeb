@@ -9,7 +9,7 @@ class CustomText extends StatelessWidget {
     this.weight
   });
 
-  final String text;
+  final String? text;
   final Color? color;
   final double? size;
   final FontWeight? weight;
@@ -17,7 +17,7 @@ class CustomText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      text,
+      text??'',
       style: TextStyle(
         color: color ?? Colors.black,
         fontSize: size ?? 16,

@@ -15,6 +15,9 @@ const ordersPageRoute = "/orders";
 const autoshowPageDisplayName = "Autoshow";
 const autoshowPageRoute = "/autoshow";
 
+const servicesPageDisplayName = "Services";
+const servicesPageRoute = "/services";
+
 const authenticationDisplayName = "Log Out";
 const authenticationPageRoute = "/auth";
 
@@ -31,5 +34,6 @@ List<MenuItem> sideMenuItems = [
   MenuItem(name: clientsPageDisplayName, route: clientsPageRoute),
   MenuItem(name: ordersPageDisplayName, route: ordersPageRoute),
   MenuItem(name: autoshowPageDisplayName, route: autoshowPageRoute),
+  MenuItem(name: servicesPageDisplayName, route: servicesPageRoute),
   MenuItem(name: authenticationDisplayName, route: authenticationPageRoute),
 ];

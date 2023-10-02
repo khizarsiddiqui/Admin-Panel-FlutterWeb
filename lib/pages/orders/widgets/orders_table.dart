@@ -14,8 +14,8 @@ class OrdersTable extends StatefulWidget {
 }
 
 class _OrdersTableState extends State<OrdersTable> {
-  final OrdersController ordersController =
-  Get.put(OrdersController());
+  final OrdersController ordersController = Get.put(OrdersController());
+
 
   @override
   void initState() {
@@ -27,13 +27,14 @@ class _OrdersTableState extends State<OrdersTable> {
   @override
   Widget build(BuildContext context) {
     var columns = const [
-      // DataColumn(label: Text('Products:')),
-      DataColumn(label: Text('Total:')),
-      DataColumn(label: Text('DiscountedTotal:')),
-      DataColumn(label: Text('UserId:')),
-      DataColumn(label: Text('TotalProducts:')),
-      DataColumn(label: Text('TotalQuantity:')),
+      DataColumn(label: Text('Order ID')),
+      DataColumn(label: Text('Total')),
+      DataColumn(label: Text('Discounted Total')),
+      DataColumn(label: Text('User ID')),
+      DataColumn(label: Text('Total Products')),
+      DataColumn(label: Text('Total Quantity')),
     ];
+
 
     final verticalScrollController = ScrollController();
     final horizontalScrollController = ScrollController();
@@ -80,39 +81,33 @@ class _OrdersTableState extends State<OrdersTable> {
                   columns: columns,
                   rows: List<DataRow>.generate(
                     ordersController.orders.length,
-                        (index) => DataRow(cells: [
-                      DataCell(CustomText(
-                        text: ordersController.orders[index].total
-                            .toString(),)),
-                      DataCell(CustomText(
-                          text: ordersController.orders[index].discountedTotal
-                              .toString())),
-                      DataCell(CustomText(
-                          text: ordersController.orders[index].userId
-                              .toString())),
-                      DataCell(CustomText(
-                        text: ordersController.orders[index].totalProducts
-                            .toString())),
-                      DataCell(CustomText(
-                        text: ordersController.orders[index].totalQuantity
-                            .toString())),
-                      DataCell(Container(
-                        decoration: BoxDecoration(
-                          color: light,
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: active, width: .5),
-                        ),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 12,
-                          vertical: 6,
-                        ),
-                        child: CustomText(
-                          text: 'Delete',
-                          color: active.withOpacity(.7),
-                          weight: FontWeight.bold,
-                        ),
-                      )),
-                    ]),
+                        (index) {
+                      final order = ordersController.orders[index];
+                      return DataRow(cells: [
+                        DataCell(CustomText(text: order.id.toString())),
+                        DataCell(CustomText(text: order.total.toString())),
+                        DataCell(CustomText(text: order.discountedTotal.toString())),
+                        DataCell(CustomText(text: order.userId.toString())),
+                        DataCell(CustomText(text: order.totalProducts.toString())),
+                        DataCell(CustomText(text: order.totalQuantity.toString())),
+                        DataCell(Container(
+                          decoration: BoxDecoration(
+                            color: light,
+                            borderRadius: BorderRadius.circular(20),
+                            border: Border.all(color: active, width: .5),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 6,
+                          ),
+                          child: CustomText(
+                            text: 'Delete',
+                            color: active.withOpacity(.7),
+                            weight: FontWeight.bold,
+                          ),
+                        )),
+                      ]);
+                    },
                   ),
                 ),
               ),
