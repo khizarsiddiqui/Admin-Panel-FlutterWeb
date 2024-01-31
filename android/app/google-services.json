@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "54203721180",
+    "firebase_url": "https://mechanics-mangao-24d0d-default-rtdb.firebaseio.com",
+    "project_id": "mechanics-mangao-24d0d",
+    "storage_bucket": "mechanics-mangao-24d0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54203721180:android:f5be784f7d8634af52db19",
+        "android_client_info": {
+          "package_name": "com.example.admin_panel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54203721180-l1n7oqe5md0scqmu4q81v5fvqjmblk8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin_panel",
+            "certificate_hash": "512fe7608f7de9ec7ee83ec55318044cf2958b98"
+          }
+        },
+        {
+          "client_id": "54203721180-lfoivo62bcv2tjrc0uk1kl4i3tol8h7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnXU9KwVxePSpGNM4tVRZwVNR8YdPyj6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54203721180-lfoivo62bcv2tjrc0uk1kl4i3tol8h7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54203721180:android:6e317f665ea0d12a52db19",
+        "android_client_info": {
+          "package_name": "com.example.mechanics_mangao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54203721180-0othuqfbk79q8khaglmbo6rcs3t3ahgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mechanics_mangao",
+            "certificate_hash": "83766bd8f950352709b3bca6adcadf08feac01c0"
+          }
+        },
+        {
+          "client_id": "54203721180-lfoivo62bcv2tjrc0uk1kl4i3tol8h7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnXU9KwVxePSpGNM4tVRZwVNR8YdPyj6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54203721180-lfoivo62bcv2tjrc0uk1kl4i3tol8h7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
